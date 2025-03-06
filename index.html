@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li style="color: blueviolet">Home</li>
+        <li style="color: palevioletred">News</li>
+        <li style="color: pink">Weather</li>
+        <li style="float: right; color: red">About</li>
+      </ul>
+    </nav>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+
+<section class="weather-section">
+  <div class="page">
+    <h1>LATEST WEATHER</h1>
+    <div class="archive">
+      <article class="article">
+        <section id="stats">
+          <div class="summary">
+            <h2>Weather summary</h2>
+            <h3 id="City">Salt Lake City</h3>
+            <p>Currently: Moderate rain <span id="current-desc"></span></p>
+            <p>
+              Tempature:41
+              <span id="current-temp"></span> °F
+            </p>
+            <p>Wind Chill: 14<span id="current-windChill"></span> °F</p>
+            <p>Humidity: 86<span id="current-humid"></span>%</p>
+            <p>Wind Speed: 3.19<span id="current-windSpeed"></span> mph</p>
+          </div>
+        </section>
+        <div>
+          <img src="https://picsum.photos/400" alt="Random Image" />
+        </div>
+      </article>
+
+      <!-- 5 day forecast -->
+      <div class="article-five-day">
+        <article id="forecastContainer">
+          <h2 id="forecastTitle">5 Day Forecast</h2>
+          <h3 id="city">Salt Lake city</h3>
+          <div class="flex">
+            <div class="flex-col">
+              <span id="dayTitle1" class="col-head">Mon</span>
+              <img
+                src="Sunny.jpg"
+                alt="Sunny with clouds"
+                width="100"
+                height="100"
+              />
+              <span class="temp-data">
+                <span id="data1">54</span>
+                <span>°F</span>
+              </span>
+            </div>
+
+            <div class="flex-col">
+              <span id="dayTitle2" class="col-head">Tue</span>
+              <img src="snowy.jpg" alt="Snow" width="100" height="100" />
+              <div class="temp-data">
+                <span id="data2">46</span>
+                <span>°F</span>
+              </div>
+            </div>
+
+            <div class="flex-col">
+              <span id="dayTitle3" class="col-head">Wed</span>
+              <img
+                src="thunderStorms.jpg"
+                alt="thunderStorms"
+                width="100"
+                height="100"
+              />
+              <div class="temp-data">
+                <span id="data3">36</span>
+                <span>°F</span>
+              </div>
+            </div>
+
+            <div class="flex-col">
+              <span id="dayTitle4" class="col-head">Thu</span>
+              <img src="Umbrella.jpg" alt="Umbrella" width="100" height="100" />
+              <div class="temp-data">
+                <span id="data4">41</span>
+                <span>°F</span>
+              </div>
+            </div>
+
+            <div class="flex-col">
+              <span id="dayTitle5" class="col-head">Fri</span>
+              <img src="Windy.jpg" alt="Windy" width="100" height="100" />
+              <div class="temp-data">
+                <span id="data5">54</span>
+                <span>°F</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<hr />
