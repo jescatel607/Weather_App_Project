@@ -2,17 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <nav>
+    <header><h1>News</h1></header>
+    <nav class="navbar">
       <ul>
-        <li style="color: blueviolet">Home</li>
-        <li style="color: palevioletred">News</li>
-        <li style="color: pink">Weather</li>
-        <li style="float: right; color: red">About</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Weather</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </nav>
     <main></main>
@@ -116,18 +118,24 @@
 <section class="news-section">
   <div class="page">
     <h1>Latest News</h1>
+
+    <!-- Article -->
     <div class="archive">
-      <article class="article">
+      <article class="article featured-article">
         <img
           src="Whale.webp"
           alt="Whale with a person"
           width="100"
           height="100"
-        />
-        <h2>
-          <a id="header-article"></a>
-        </h2>
-        <p id="header-desc">3/17/2025</p>
+          <h2><a href="#">Kayaker Engulfed by Whale: Experts Say It Was Harmless</a></h2>
+          <p>3/17/2025 - A kayaker in Chile was briefly swallowed by a humpback whale, an incident caught on camera...</p>      
+        </article>
+        
+        <!-- smaller articles -->
+        <article class="article">
+          <img src="https://picsum.photos/200" alt="Robinhood" />
+          <h3><a href="#">Robinhood to cut 23% of its workforce</a></h3>
+          <p>Robinhood plans to lay off 23% more workers after a tough quarter...</p>
       </article>
       <article class="article">
         <img
@@ -182,6 +190,7 @@
       src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2"
       alt="main article"
     />
+    
     <h3>
       <a id="article-link-1">Tokyo's first DJ Cat</a>
     </h3>
